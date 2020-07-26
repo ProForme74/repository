@@ -1,0 +1,42 @@
+<br>
+<form action="/insert" method="POST">
+    <div class="form-group">
+      <label for="name">Ime</label>
+      <input
+        type="ime"
+        id="ime"
+        name="ime"
+        class="form-control"
+        
+        value="<%= typeof name != 'undefined' ? name : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="titula">Titula</label>
+      <input
+        type="titula"
+        id="titula"
+        name="titula"
+        class="form-control"
+        
+        value="<%= typeof email != 'undefined' ? email : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="zavod">Zavod</label>
+      <input
+        type="zavod"
+        id="zavod"
+        name="zavod"
+        class="form-control"
+        
+        value="<%= typeof password != 'undefined' ? password : '' %>"
+      />
+    </div>
+    
+    <button type="submit" class="btn btn-success">
+      Unesi
+    </button>
+  </form>
+  <a href=".." class="btn btn-secondary">Nazad</a>
+  

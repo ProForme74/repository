@@ -1,0 +1,36 @@
+
+<p class="lead mb-3">Dobrodošli <%= user.name %></p>
+
+
+<div role="main" class="ui-content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-collapsible="false">
+        <h3>Odjeli</h3>
+        
+        <a href="/odjeli/intenzivna" class="btn btn-primary btn-block">Intenzivna</a>
+        
+        <button id="dnevna" class="btn btn-primary btn-block">Dnevna bolnica</button>
+      </div>
+      <div data-role="collapsible" data-collapsible="false">
+        <h3>Zavodi</h3>
+        
+        <a href="/zavodi/kirurgija" class="btn btn-info btn-block">Kirurgija</a>
+        <a href="/zavodi/ortopedija" class="btn btn-info btn-block">Ortopedija</a>
+        <a href="/zavodi/radiologija" class="btn btn-info btn-block">Radiologija</a>
+        <a href="/zavodi/pulmonologija" class="btn btn-info btn-block">Pulmonologija</a>
+        <a href="/zavodi/endokrinologija" class="btn btn-info btn-block">Endokrinologija</a>
+        <a href="/zavodi/urologija" class="btn btn-info btn-block">Urologija</a>
+        <a href="/zavodi/otorinolaringologija" class="btn btn-info btn-block">Otorinolaringologija</a>
+        <a href="/zavodi/dermatologija" class="btn btn-info btn-block">Dermatologija</a>
+        <a href="/zavodi/kardiologija" class="btn btn-info btn-block">Kardiologija</a>
+       </div>
+    </div>
+  </div>
+  <br>
+
+
+<form action="/unos" method="POST">
+    <button type="submit" class="btn btn-success">Unos osoblja</button>
+</form>
+<br><a href="/users/logout" class="btn btn-secondary">Logout</a>
+
