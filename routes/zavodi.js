@@ -19,7 +19,7 @@ router.get('/kirurgija', (req, res) => {
         res.render('zavod', {items: resultArray});
        });
     });
-  });dacccwww
+  });
   
   //ortopedija
   router.get('/ortopedija', (req, res) => {
